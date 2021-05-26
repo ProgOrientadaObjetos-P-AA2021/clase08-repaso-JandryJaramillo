@@ -1,19 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete11;
 
-/**
- *
- * @author reroes
- */
 public class Profesor {
     private String nombre;
     private String tipo;
     
-    public Profesor(String t){
+    public Profesor(String n,String t){//agregamos la variable nombre al constructor
+        nombre = n;
         tipo = t;
     }
     

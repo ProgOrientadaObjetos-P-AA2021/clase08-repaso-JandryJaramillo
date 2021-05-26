@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete11;
 
 public class Ejecutor {
@@ -31,7 +26,9 @@ public class Ejecutor {
         
         Calificacion [] lista = {c1, c2, c3}; 
         
-        LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers");
+        //LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers");
+        //Falta declarar la calificación del estudiante, es decir el arreglo.
+        LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers",lista);
         libreta1.establecerPromedio();
         libreta1.establecerPromedioCualitativo();
         System.out.println(libreta1);

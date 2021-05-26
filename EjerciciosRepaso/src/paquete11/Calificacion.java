@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete11;
 
-/**
- *
- * @author reroes
- */
 public class Calificacion {
 
     private double nota;
@@ -16,7 +7,8 @@ public class Calificacion {
     private Profesor profesor;
 
     public Calificacion(double n, String nombre) {
-        nota = 0;
+        //nota = 0; la nota debe ser = n, si no al final las notas son todas 0
+        nota = n;
         nombreMateria = nombre;
         
     }
@@ -29,8 +21,9 @@ public class Calificacion {
         nombreMateria = n;
     }
     
-    public void establecerProfesor(String n) {
-        profesor = n
+    public void establecerProfesor(Profesor n) {//Aqui se debe poner que el tipo
+        //de dato sea de tipo Profesor y no String
+        profesor = n;
     }
 
     public double obtenerNota() {

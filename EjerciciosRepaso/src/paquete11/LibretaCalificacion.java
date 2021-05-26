@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete11;
 
-/**
- *
- * @author reroes
- */
 public class LibretaCalificacion {
     private String estudiante;
     private double promedio;
@@ -26,9 +17,10 @@ public class LibretaCalificacion {
     
     public void establecerPromedio(){
         
-        
+        double suma = 0;//Lavariable suma debe ser declarada fuera del for
+        //para que se pueda usar en el promedio
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
-            double suma = 0;
+            //double suma = 0;
             suma = suma + obtenerCalificaciones()[i].obtenerNota();
         }
         
